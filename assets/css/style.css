@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+:root {
+    --white: hsl(0, 100%, 100%);
+    --gray-200: hsl(270, 3%, 87%);
+    --gray-400: hsl(212, 12%, 71%);
+    --purple-950: hsl(278, 68%, 11%);
+
+    --active-input:hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --input-error: hsl(0, 100%, 66%);
+
+}
+
+body {
+    max-width: 1440px;
+    min-width: 1000px;
+    height: 90vh;
+}
+
+/* Formatação da frente do cartão */
+#cartao {
+    width: 30%;
+    height: 100%;
+    border: 1px solid red;
+    background-image: url(/images/bg-main-desktop.png);
+}
+
+.frente {
+    position: relative;
+    top: 120px;
+    left: 80px;
+    padding: 20px 30px 0 30px;
+    border-radius: 10px;
+    background-image: url(/images/bg-card-front.png);
+}
+
+.frente .numCartao {
+    font-size: 1.7rem;
+    margin-top: 40px;
+    color: var(--white);
+}
+
+.frente .usuario {
+    font-size: .9rem;
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.frente > div {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 22px;
+    color: var(--white);
+}
+
+.frente .mes, .frente .ano {
+    font-size: .9rem;
+}
+
+/* Formatação do verso do cartão */
+.verso {
+    position: relative;
+    top:150px;
+    left: 200px;
+    height: 245px;
+    width: 447px;
+    background-image: url(/images/bg-card-back.png);
+}
+
+.verso .cvc {
+    position: relative;
+    left: 80%;
+    top: 110px;
+    color: var(--gray-200);
+}
+
+
+/* Formulário */
+#formulario {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 60%;
+    bottom: 80%;
+}
+
+#formulario label {
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+#formulario input[type = "text"] {
+    width: 100%;
+    font-size: .8rem;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    border: 1px solid var(--gray-200);
+    border-radius: 4px;
+}
+
+#formulario input[type = "text"]:active {
+    border-color: var(--active-input);
+}

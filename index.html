@@ -8,40 +8,43 @@
   
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
-
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
+  <section id="cartao">
+    <div class="frente">
+      <img src="./images/card-logo.svg" alt="logo da empresa do cartão">
+      <h2 class="numCartao">0000 0000 0000 0000</h2>
+      <p class="usuario">Jane Applessed</p>
+      <div>
+        <p class="mes">00</p>/
+        <p class="ano">00</p>
+      </div>
+    </div>
+    <div class="verso">
+      <p class="cvc">000</p>
+    </div>
+  </section>
+  <section id="formulario">
+    <form action="#">
+      <label for="cartaoUsuario"> Cardholder name
+        <input type="text" name="cartaoUsuario" id="cartaoUsuario" placeholder="e.g. Jane Appleseed">
+      </label>
+      <label for="cartaoNumero"> Card number
+        <input type="text" name="cartaoNumero" id="cartaoNumero" placeholder="e.g. 1234 5678 9123 0000">
+      </label>
+      <label for="cartaoExpedicao"> Exp. date (mm/yy)
+        <input type="text" name="cartaoExpedicao" id="cartaoExpedicao" placeholder="MM">
+        <input type="text" name="cartaoAno" id="cartaoAno" placeholder="YY">
+      </label>
+      <label for="cartaoCVC"> CVC
+        <input type="text" name="cartaoCVC" id="cartaoCVC" placeholder="e.g. 123">
+      </label>
+      <button type="submit">confirm</button>
+    </form>
+  </section>
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
