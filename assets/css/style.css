@@ -34,23 +34,32 @@ body {
 }
 
 .frente {
+    width: 447px;
+    height: 245px;
     position: relative;
     top: 120px;
     left: 80px;
-    padding: 20px 30px 0 30px;
     border-radius: 10px;
     background-image: url(/images/bg-card-front.png);
 }
 
+.frente img {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
 .frente .numCartao {
     font-size: 1.7rem;
-    margin-top: 40px;
+    margin-top: 90px;
+    margin-left: 30px;
     color: var(--white);
 }
 
 .frente .usuario {
     font-size: .9rem;
     margin-top: 20px;
+    margin-left: 30px;
     color: var(--white);
 }
 
