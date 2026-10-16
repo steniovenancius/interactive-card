@@ -50,7 +50,7 @@ body {
 }
 
 .frente .numCartao {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     margin-top: 90px;
     margin-left: 30px;
     color: var(--white);
@@ -58,7 +58,7 @@ body {
 
 .frente .usuario {
     font-size: .9rem;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 30px;
     color: var(--white);
 }
@@ -68,6 +68,7 @@ body {
     justify-content: flex-end;
     position: relative;
     bottom: 22px;
+    right: 40px;
     color: var(--white);
 }
 
